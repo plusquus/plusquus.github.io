@@ -1,0 +1,55 @@
+body{
+  background-color:#002451;
+}
+h2{
+  color: #BBDAFF;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin-top: 70px;
+}
+h2:hover, div:hover{
+  background-color: #00346e;
+}
+h2:active, div:active{
+  background-color: #0c7fff;
+}
+a.plus:hover{
+  color: #99FFFF;
+  font-style: oblique;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+a.quus:hover{
+  color: #99FFFF;
+  font-style: oblique;
+  text-decoration: line-through;
+  cursor: wait;
+}
+a.slash:hover{
+  color: #99FFFF;
+  font-style: oblique;
+  text-decoration: line-through;
+  cursor: crosshair;
+}
+a.plus:active, a.slash:active, a.quus:active{
+  color: #ebbbff;
+  font-style: oblique;
+  text-decoration: line-through;
+}
+p{
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+.center {
+  height: 20px;
+  position: relative;
+}
+.center p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
