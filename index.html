@@ -9,7 +9,8 @@
     <h2>
         <a class="plus" onclick="aud_play_pause('audio_plus')">[plus]</a>
         <a class="slash" onclick="aud_play_pause('audio_slash')">/</a>
-        <a class="quus" onclick="aud_play_pause('audio_quus')">(quus)</a></h2>
+        <a class="quus" onclick="aud_play_pause('audio_quus')">(quus)</a>
+    </h2>
     &nbsp;<br>
     &nbsp;<br>
     &nbsp;<br>
@@ -17,7 +18,9 @@
     &nbsp;<br>
     <div class="center" style="margin-top:120px;">
       <p>
-        [+] / (+)
+        <a class="plusym" href="music.html">[+]</a>
+        <a class="slashsym" href="about.html">/</a>
+        <a class="plusym" href="image.html">(+)</a>
       </p>
     </div>
     <audio loop id="audio_plus"
@@ -33,14 +36,5 @@
       Your user agent does not support the HTML5 Audio element.
     </audio>
   </body>
-  <script>
-    function aud_play_pause(lel) {
-      var myAudio = document.getElementById(lel);
-      if (myAudio.paused) {
-        myAudio.play();
-      } else {
-        myAudio.pause();
-      }
-    }
-  </script>
+  <script src="play_pause.js"></script>
 </html>
