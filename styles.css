@@ -1,17 +1,33 @@
 body{
   background-color:#002451;
 }
+hr{
+  border-color: #7285b7;
+}
 h2{
   color: #BBDAFF;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   margin-top: 70px;
 }
-h2:hover, div:hover{
+h3{
+  color: #ebbbff;
+  font-family: "Courier New", Courier, monospace;
+  text-align: left;
+  margin-left: 10px;
+}
+h2:hover, div:hover, h3:hover{
   background-color: #00346e;
 }
-h2:active, div:active{
+h2:active, div:active, h3:active{
   background-color: #0c7fff;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a.plus, a.quus, a.slash{
+  color: #BBDAFF;
 }
 a.plus:hover{
   color: #99FFFF;
@@ -31,7 +47,30 @@ a.slash:hover{
   text-decoration: line-through;
   cursor: crosshair;
 }
-a.plus:active, a.slash:active, a.quus:active{
+a.plusym:hover{
+  color: #99FFFF;
+  font-style: oblique;
+  text-decoration: line-through;
+  cursor: pointer;
+  font-size: x-large;
+}
+a.slashsym:hover{
+  color: #99FFFF;
+  font-style: oblique;
+  text-decoration: line-through;
+  cursor: help;
+  font-size: x-large;
+}
+a.generic{
+  text-decoration: underline;
+}
+a.generic:hover{
+  color: #99FFFF;
+  font-style: oblique;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+a.plus:active, a.slash:active, a.quus:active, a.plusym:active, a.slashsym:active, a.generic:active{
   color: #ebbbff;
   font-style: oblique;
   text-decoration: line-through;
@@ -52,4 +91,25 @@ p{
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+div.img {
+    margin: 10px;
+    border: 1px solid #7285b7;
+    float: left;
+    width: 300px;
+    height: 235px;
+    margin-left: 60px;
+}
+div.img:hover {
+    border: 1px solid #ff9da4;
+}
+div.img img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
 }
