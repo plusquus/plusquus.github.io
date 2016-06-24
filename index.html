@@ -5,18 +5,52 @@
     <title>PLUS/QUUS</title>
     <style>
       body{
-        background-color: "002451";
+        background-color:#002451;
+      }
+      h2{
+        color: #BBDAFF;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        margin-top: 70px;
+      }
+      h2:hover{
+        background-color: #00346e;
+      }
+      h2:active{
+        background-color: #0c7fff;
+      }
+      a.plus:hover{
+        color: #99FFFF;
+        font-style: oblique;
+        text-decoration: line-through;
+        cursor: not-allowed;
+      }
+      a.quus:hover{
+        color: #99FFFF;
+        font-style: oblique;
+        text-decoration: line-through;
+        cursor: wait;
+      }
+      a.slash:hover{
+        color: #99FFFF;
+        font-style: oblique;
+        text-decoration: line-through;
+        cursor: crosshair;
+      }
+      a.plus:active, a.slash:active, a.quus:active{
+        color: #ebbbff;
+        font-style: oblique;
+        text-decoration: line-through;
       }
       p{
+        font-size: large;
         font-family: "Courier New", Courier, monospace;
-        color: "FFFFFF";
+        color: white;
       }
       .center {
         height: 200px;
         position: relative;
-        border: 3px solid green;
       }
-
       .center p {
         margin: 0;
         position: absolute;
@@ -28,10 +62,41 @@
     </style>
   </head>
   <body>
-    <div class="center">
+    <h2>
+        <a class="plus" onclick="aud_play_pause('audio_plus')">[plus]</a>
+        <a class="slash" onclick="aud_play_pause('audio_slash')">/</a>
+        <a class="quus" onclick="aud_play_pause('audio_quus')">(quus)</a></h2>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    <div class="center" style="margin-top:30px;">
       <p>
-        Hola!
+        [+] / (+)
       </p>
     </div>
+    <audio loop id="audio_plus"
+      <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis'>
+      Your user agent does not support the HTML5 Audio element.
+    </audio>
+    <audio loop id="audio_slash"
+      <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis'>
+      Your user agent does not support the HTML5 Audio element.
+    </audio>
+    <audio loop id="audio_quus"
+      <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis'>
+      Your user agent does not support the HTML5 Audio element.
+    </audio>
   </body>
+  <script>
+    function aud_play_pause(lel) {
+      var myAudio = document.getElementById(lel);
+      if (myAudio.paused) {
+        myAudio.play();
+      } else {
+        myAudio.pause();
+      }
+    }
+  </script>
 </html>
