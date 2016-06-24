@@ -1,7 +1,37 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <title>PLUS/QUUS</title>
+    <style>
+      body{
+        background-color: "002451";
+      }
+      p{
+        font-family: "Courier New", Courier, monospace;
+        color: "FFFFFF";
+      }
+      .center {
+        height: 200px;
+        position: relative;
+        border: 3px solid green;
+      }
+
+      .center p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
   <body>
-  <h1>Hello!</h1>
+    <div class="center">
+      <p>
+        Hola!
+      </p>
+    </div>
   </body>
 </html>
